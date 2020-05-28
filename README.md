@@ -1,6 +1,11 @@
 FizzBuzz Kata
 ==================
 
+## Run tests
+
+`python fizzbuzz/FizzBuzzTest.py`
+
+
 ## Wymagania
 
 FizzBuzz to gra w której gracze liczą po kolei: 1, 2... Ale gdy liczba jest podzielna przez 3, zamiast tej liczby należy powiedzieć "Fizz". Natomiast gdy liczba jest podzielna przez 5 trzeba powiedzieć "Buzz". Gdy liczba jest podzielna zarówno przez 3 jak i przez 5, trzeba powiedzieć "FizzBuzz".
