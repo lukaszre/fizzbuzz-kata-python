@@ -5,6 +5,10 @@ FizzBuzz Kata
 
 `python fizzbuzz/FizzBuzzTest.py`
 
+## Unittest framework
+
+https://docs.python.org/3/library/unittest.html#module-unittest
+
 
 ## Wymagania
 
