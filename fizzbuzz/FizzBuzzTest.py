@@ -38,6 +38,11 @@ class FizzBuzzTest(unittest.TestCase):
 
         self.assertEqual(fizzbuzz_result, FIZZ)
 
+    def test_should_return_buzz_when_10(self):
+        fizzbuzz_result = self.fizzbuzz.fizzBuzz(number=10)
+
+        self.assertEqual(fizzbuzz_result, BUZZ)
+
 
 if __name__ == '__main__':
     unittest.main()
