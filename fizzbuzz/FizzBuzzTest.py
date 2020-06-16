@@ -2,7 +2,9 @@ import unittest
 
 
 # A testcase is created by subclassing unittest.TestCase.
-from fizzbuzz.FizzBuzz import FizzBuzz
+from fizzbuzz.FizzBuzz import FizzBuzz, InvalidNumberException
+
+FIZZBUZZ = "fizzbuzz"
 
 BUZZ = "buzz"
 
@@ -42,6 +44,20 @@ class FizzBuzzTest(unittest.TestCase):
         fizzbuzz_result = self.fizzbuzz.fizzBuzz(number=10)
 
         self.assertEqual(fizzbuzz_result, BUZZ)
+
+    def test_should_return_fizzbuzz_when_15(self):
+        fizzbuzz_result = self.fizzbuzz.fizzBuzz(number=15)
+
+        self.assertEqual(fizzbuzz_result, FIZZBUZZ)
+
+    def test_should_return_fizzbuzz_when_45(self):
+        fizzbuzz_result = self.fizzbuzz.fizzBuzz(number=45)
+
+        self.assertEqual(fizzbuzz_result, FIZZBUZZ)
+
+    def test_should_throw_Exception_when_0(self):
+        with self.assertRaises(InvalidNumberException):
+            self.fizzbuzz.fizzBuzz(number=0)
 
 
 if __name__ == '__main__':
